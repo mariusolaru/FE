@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  background-image: url('http://images-cdn.moviepilot.com/image/upload/c_fill,h_794,w_1912/t_mp_quality/hulkbuster-armor-this-is-how-avengers-age-of-ultron-s-hulkbuster-scene-ll-go-jpeg-301706.jpg');
+  background-position: cover;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.overlay {
+  z-index: 1;
+  opacity: 0.5;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.leftcontent {
+  z-index: 2;
+  height: calc(100% - 120px);
+  width: calc(100% - 470px);
+  margin-top: 60px;
+  margin-left: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ltitle {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.lcontent {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  padding-top: 60px;
+}
+
+.rtitle {
+  color: #333;
+  font-size: 36px;
+  font-weight: 200;
+  padding-left: 30px;
+}
+
+.textinput {
+  margin-left: 35px;
+  height: 40px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #666;
+  border-left-width: 5px;
+  background-color: #eee;
+  width: 270px;
+  padding-left: 10px;
+  outline: 0;
+}
+
+.textinput:focus {
+  background-color: #f4f4f4;
+}
+
+.submit {
+  background-color: #1e90ff;
+  height: 50px;
+  width: 50px;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+}
+
+table caption {
+	padding: .5em 15;
+}
+
+@media screen and (max-width: 767px) {
+  table caption {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
+</style>
+
+</head>
+<body>
+<div class="overlay">
+</div>
+<div class="leftcontent">
+  <br>
+  <span class="lcontent">
+	<br>
+	<br>
+	<br>
+	<h2>Marketplace projects</h2>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-xs-12">
+	      <div class="table-responsive" id="content">
+	        <table class="table table-bordered table-hover">
+	          <thead>
+	            <tr>
+	              <th>Description </th>
+	              <th>Freelancer Reward </th>
+	              <th>Evaluator Reward </th>
+	              <th>Expertise area </th>
+	              <th>Solving estimated time </th>
+	              <th>Evaluation estimated time </th>
+	              <th>Manager </th>
+	              <th>Apply </th>
+	            </tr>
+	          </thead>
+	        </table>
+	      </div><!--end of .table-responsive-->
+	    </div>
+	  </div>
+	</div>
+  </span>
+</div>
+<div class="sidebar">
+  <span class="rtitle">Register</span>
+  <br>
+  <br>
+  <form>
+    <input class="textinput" type="text" name="username" autofocus="autofocus" placeholder="Username">
+    <br>
+    <br>
+    <br>
+    <button class="submit" type="submit">
+      <img src="http://www.yachtsale.se/wp-content/themes/Yachtsales/images/arrow-left.png" height="24px" />
+    </button>
+  </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/marketplace.js"></script>
+</body>
+</html>
